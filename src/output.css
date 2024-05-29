@@ -566,6 +566,49 @@ video {
   border-width: 0;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
+.inset-y-0 {
+  top: 0px;
+  bottom: 0px;
+}
+
+.inset-y-10 {
+  top: 2.5rem;
+  bottom: 2.5rem;
+}
+
+.inset-y-20 {
+  top: 5rem;
+  bottom: 5rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.-z-10 {
+  z-index: -10;
+}
+
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -576,12 +619,38 @@ video {
   margin-bottom: 1rem;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.min-h-dvh {
+  min-height: 100dvh;
 }
 
 .max-w-12 {
@@ -594,6 +663,10 @@ video {
 
 .max-w-8 {
   max-width: 2rem;
+}
+
+.max-w-screen-md {
+  max-width: 768px;
 }
 
 .items-center {
@@ -689,6 +762,42 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\.\/\'\)\] {
+  background-image: url('../');
+}
+
+.bg-\[url\(\'\.\.\/iamges\/bg-pattern-quota\'\)\] {
+  background-image: url('../iamges/bg-pattern-quota');
+}
+
+.bg-\[url\(\'\.\.\/iamges\/bg-pattern-quotation\.jpg\'\)\] {
+  background-image: url('../iamges/bg-pattern-quotation.jpg');
+}
+
+.bg-\[url\(\'\.\.\/iamges\/bg-pattern-quotation\.svg\'\)\] {
+  background-image: url('../iamges/bg-pattern-quotation.svg');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg-pattern-quotation\.svg\'\)\] {
+  background-image: url('../images/bg-pattern-quotation.svg');
+}
+
+.bg-\[top_right_10\%\] {
+  background-position: top right 10%;
+}
+
+.bg-\[top_right_20\%\] {
+  background-position: top right 20%;
+}
+
+.bg-\[top_right_15\%\] {
+  background-position: top right 15%;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-6 {
@@ -943,4 +1052,46 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+@media (min-width: 1024px) {
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
+  .lg\:row-start-2 {
+    grid-row-start: 2;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:max-w-screen-md {
+    max-width: 768px;
+  }
+
+  .lg\:max-w-screen-lg {
+    max-width: 1024px;
+  }
+
+  .lg\:max-w-screen-xl {
+    max-width: 1280px;
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:items-center {
+    align-items: center;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
+  }
 }
